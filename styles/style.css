@@ -1,23 +1,57 @@
 @font-face {
-    font-family: 'vazir';
-    src: url('../fonts/vazir.eot'); 
-    src: url('../fonts/vazir.ttf')  format('truetype'), 
-         url('../fonts/vazir.woff2') format('woff2'), 
-         url('../fonts/vazir.woff') format('woff');
-  }
+  font-family: "vazir";
+  src: url("../fonts/vazir.eot");
+  src: url("../fonts/vazir.ttf") format("truetype"),
+    url("../fonts/vazir.woff2") format("woff2"),
+    url("../fonts/vazir.woff") format("woff");
+}
 
-  *{
-      padding: 0;
-      margin: 0;
-  }
+* {
+  padding: 0;
+  margin: 0;
+}
 
+body {
+  font-family: "vazir";
+  direction: rtl;
+}
 
-  body{
-      font-family: 'vazir';
-      direction: rtl;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-  }
+.container {
+  /* background-color: rgba(211, 51, 51, 0.477); */
+  width: 100%;
+  height: 100px;
+  position: fixed;
+  
+}
+ .container h2 {
+    padding: 20px;
+    text-align: center;
+    background-color: antiquewhite;
+    color: rgba(0, 0, 0, 0.695);
+ }
+
+ .container .scroll {
+    width: 100%;
+    height: 7px;
+    background-color:azure
+ }
+
+ .container .scroll .scroll-bar {
+    width: 100%;
+    height: 7px;
+    background: #ef32d9;
+    background: -webkit-linear-gradient(to right, #89fffd, #ef32d9);
+    background: linear-gradient(to right, #89fffd, #ef32d9);
+ }
+
+ .content {
+    padding-top: 100px;
+ }
+
+ .content h2 {
+    padding: 0px 25px 15px;
+ }
+
+ .content p {
+    padding: 15px;
+ }
